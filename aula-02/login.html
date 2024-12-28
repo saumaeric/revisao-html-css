@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula02</title>
+    <title>aula 02</title>
 </head>
 <body>
+    <!--
+        https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-1-2.png
+        https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/pulse.webp
+    -->
+
+    <form>
+        <h1 class="titulo">Bem vindo</h1>
+        
+        <div class="formulario">
+            <div class="imagem">
+                <img
+                    width="50"
+                    alt="não consegui carregar a imagem"
+                    src="https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-1-2.png" 
+                />
+            </div>
+            
+            <div class="description">
+                <input type="text" placeholder="email@exemplo.com">
+                <input type="text" placeholder="senha">
     
+                <button>Cadastrar</button>
+                <p>Não tem cadastro ?</p>
+            </div>
+        </div>
+    </form>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            color: #fff;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+
+            padding-top: 100px;
+            align-items: center;
+        }
+        form{
+            width: 30%;
+            height: 350px;
+            background-color: #1d1d1d;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .titulo {
+            color: orange;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #302d35;
+        }
+        .formulario{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            background-color: #1d1d1d;
+        }
+        .imagem{
+            width: 120px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imagem img{
+            width: 130px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+            width: 300px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 7px;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            background-color: #302d35;
+        }
+        button{
+            padding: 7px;
+            font-size: 1.3rem;
+            border: none;
+            color: white;
+            width: 150px;
+            letter-spacing: 2px;
+            border-radius: 7px;
+            cursor: pointer;
+            background-color: orange;
+            transition: .9s;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+    </style>
 </body>
 </html>
