@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+  </head>
+  <body>
+      
+      <form>
+        <h1>Cadastro de produtos</h1>
+        <input type="text" placeholder="Nome do produto" />
+        <input type="text" placeholder="Nome do produto" />
+        <input type="text" placeholder="Nome do produto" />
+        <input type="text" placeholder="Nome do produto" />
+        <button>cadastrar</button>
+    </form>
+
+    <div>
+        <h2>Lista de produtos</h2>
+    </div>
+
+    <style>
+      body {
+        color: #fff;
+        background-color: #000;
+
+        /* altura e largura dos elementos*/
+        width: 100vw;
+        height: 100vh;
+
+        /* centralizar os elementos filhos */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      form{
+          /* altura e largura dos elementos*/
+          width: 400px;
+          height: 400px;
+          margin-top: 50px;
+          border-radius: 10px;
+          background-color: #1d1d1d;
+
+          /* centralizar os elementos filhos */
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+      }
+      form input{
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        width: 300px;
+        outline: none;
+
+      }
+      form button{
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 7px;
+        background-color: green;
+        border: none;
+        border: 2px solid transparent;
+        transition: .5s;
+      }
+      form button:hover{
+        color: #fff;
+        cursor: pointer;
+        border: 2px solid #fff;
+        background-color: blueviolet;
+
+        transform: scale(1.1);
+      }
+    </style>
+  </body>
+</html>
