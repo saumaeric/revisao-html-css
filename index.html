@@ -3,123 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 02</title>
+    <title>Página de Vendas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!--
-        https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-1-2.png
-        https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/pulse.webp
-    -->
+<body class="bg-gray-50 font-sans">
 
-    <form>
-        <h1 class="titulo">Bem vindo</h1>
-        
-        <div class="formulario">
-            <div class="imagem">
-                <img
-                    width="50"
-                    alt="não consegui carregar a imagem"
-                    src="https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-1-2.png" 
-                />
-            </div>
-            
-            <div class="description">
-                <input type="text" placeholder="email@exemplo.com">
-                <input type="text" placeholder="senha">
-    
-                <button>Cadastrar</button>
-                <p>Não tem cadastro ou ?</p>
+    <!-- Cabeçalho -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Produto Incrível</h1>
+            <p class="mt-2 text-xl">Transforme sua vida com este produto incrível!</p>
+        </div>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section class="container mx-auto px-4 py-12 text-center">
+        <h2 class="text-3xl font-semibold mb-4">O que é o Produto?</h2>
+        <p class="text-lg mb-8">Este produto foi desenvolvido para ajudar você a alcançar seus 
+          objetivos de forma rápida e eficiente. Com ele, você vai ter uma experiência única que vai transformar sua rotina.
+        </p>
+        <img src="https://static.monetizze.com.br/img/fotos/201901/5aa85581f65dbc8d3cdb74521410ec6b.jpg" alt="Produto" class="mx-auto rounded-lg shadow-lg mb-8">
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Benefícios do Produto</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Benefício 1</h3>
+                    <p class="text-gray-700">Acelere seus resultados de forma natural e sem esforço.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Benefício 2</h3>
+                    <p class="text-gray-700">Solução eficaz com resultados visíveis em poucas semanas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">Benefício 3</h3>
+                    <p class="text-gray-700">Fácil de usar e totalmente seguro.</p>
+                </div>
             </div>
         </div>
-    </form>
+    </section>
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <!-- Seção de Chamada para Ação -->
+    <section class="container mx-auto px-4 py-12 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Pronto para Transformar sua Vida?</h2>
+        <p class="text-lg mb-8">Não perca mais tempo, adquira agora o seu e comece a ver os resultados hoje mesmo!</p>
+        <a href="https://www.seulinkdeafiliado.com" class="bg-blue-600 text-white text-xl py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Compre Agora</a>
+    </section>
 
-        }
-        body{
-            color: #fff;
-            background-color: black;
+    <!-- Rodapé -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Produto Incrível. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-            display: flex;
-            flex-direction: column;
-
-            padding-top: 100px;
-            align-items: center;
-        }
-        form{
-            width: 30%;
-            height: 350px;
-            background-color: #1d1d1d;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .titulo {
-            color: orange;
-            text-align: center;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #302d35;
-        }
-        .formulario{
-            width: 100%;
-            height: 100%;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-            background-color: #1d1d1d;
-        }
-        .imagem{
-            width: 120px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .imagem img{
-            width: 130px;
-            border-radius: 50%;
-            background-color: #fff;
-        }
-        .description{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            flex: 1;
-            width: 300px;
-        }
-        input{
-            width: 100%;
-            padding: 10px;
-            border-radius: 7px;
-            outline: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            background-color: #302d35;
-        }
-        button{
-            padding: 7px;
-            font-size: 1.3rem;
-            border: none;
-            color: white;
-            width: 150px;
-            letter-spacing: 2px;
-            border-radius: 7px;
-            cursor: pointer;
-            background-color: orange;
-            transition: .9s;
-        }
-        button:hover{
-            background-color: blueviolet;
-        }
-    </style>
 </body>
 </html>
